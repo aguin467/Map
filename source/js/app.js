@@ -5,9 +5,7 @@ import 'leaflet.locatecontrol';
 import MiniMap from 'leaflet-minimap';
 import 'leaflet-routing-machine';
 import 'leaflet-sidebar-v2';
-import 'leaflet-toolbar';
 import token from './API_Token';
-
 
 // Marker
 let marker;
@@ -148,9 +146,8 @@ Leaflet.control.sidebar({
 }).addTo(map);          // Added semicolon
 
 // Will initialize the toolbar here
-
-
-
+// The leaflet-toolbar and leaflet-draw-toolbar libraries are not maintained so that it can be used with webpack or other new bundlers
+// Rather than spending time to add such libraries, we should work on other stuff
 
 setTimeout(() => {
   map.invalidateSize();

@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css"/>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-toolbar@0.4.0-alpha.2/dist/leaflet.toolbar.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-draw-toolbar@0.3.0-alpha.1/dist/leaflet.draw-toolbar.min.css">
     
   </head>
   <body>
@@ -48,6 +49,7 @@
         </div>
     </div>
     <div id="mapid"></div>
-  <!--<script src="../js/leaflet-sidebar.js"></script>--> <!-- Don't need this, it keeps throwing the 404 error for the sidebar-->
+  <!--<script src="../js/leaflet-sidebar.js"></script>-->
+  <!-- UPDATE: It is throwing the error because it is trying to find the leaflet-sidebar.js file in relative path which does not exists. Example may have the file in  such relative path but we are not using it that way. -->
   </body>
 </html>

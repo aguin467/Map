@@ -68,7 +68,6 @@
     "leaflet-minimap": "^3.6.1",
     "leaflet-routing-machine": "^3.2.12",
     "leaflet-sidebar-v2": "^3.2.2",
-    "leaflet-toolbar": "^0.4.0-alpha.2",
     "leaflet.locatecontrol": "^0.68.0",
     "selectivizr": "^1.0.3",
     "webpack-merge": "^4.2.1"
