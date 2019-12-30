@@ -6,7 +6,7 @@ import MiniMap from 'leaflet-minimap';
 import 'leaflet-routing-machine';
 import 'leaflet-sidebar-v2';
 import token from './API_Token';
-
+import './LeafletCreditControl';
 import './LeafletCountrySelect.min';
 
 // Marker
@@ -167,6 +167,12 @@ select.on('change', function(e){
   map.addLayer(country);
   map.fitBounds(country.getBounds());
 });
+
+Leaflet.controlCredits({
+  image: "https://avatars0.githubusercontent.com/u/38892941?s=40&v=4",
+  link: "https://github.com/aguin467/Map",
+  text: "Interactive mapping<br/>by Mapbox and Leaflet"
+}).addTo(map);
 
 setTimeout(() => {
   map.invalidateSize();
