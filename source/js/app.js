@@ -145,7 +145,10 @@ Leaflet.control.sidebar({
   closeButton: true,    // whether t add a close button to the panes
   container: 'sidebar', // the DOM container or #ID of a predefined sidebar container that should be used
   position: 'left',     // left or right
-}).addTo(map);          // Added comma
+}).addTo(map);          // Added semicolon
+
+// Will initialize the toolbar here
+
 
 
 
