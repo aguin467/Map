@@ -1,0 +1,16 @@
+# Files to ignore for 'eslint'
+
+# node_modules folder
+node_modules/*
+
+# vendor folder
+source/js/vendor/*
+
+# Build folder
+build/*
+
+# Webpack configuration files
+webpack*
+
+# HTML Files
+*.html

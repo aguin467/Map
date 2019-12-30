@@ -1,0 +1,25 @@
+// Styles for Leaflet Geosearch Control
+@import '../../node_modules/leaflet.locatecontrol/src/L.Control.Locate.scss';
+@import '../../node_modules/leaflet-geosearch/assets/css/leaflet.css';
+
+// Sidebar
+@import '../../node_modules/leaflet-sidebar-v2/css/leaflet-sidebar.css';
+
+
+// Toolbar
+@import '../../node_modules/leaflet-toolbar/dist/leaflet.toolbar-src.css'; // Has to be imported as src or it won't work
+
+
+// Country Select
+
+
+// Other Styles
+#mapid {
+  width: 100vw;
+  height: 100vh;
+}
+
+.leaflet-control-minimap {
+  border: 5px solid #fff;
+  box-shadow: 0 0 16px rgba(#000, 0.5);
+}
