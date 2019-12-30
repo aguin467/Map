@@ -7,6 +7,8 @@ import 'leaflet-routing-machine';
 import 'leaflet-sidebar-v2';
 import token from './API_Token';
 
+import './LeafletCountrySelect.min';
+
 // Marker
 let marker;
 
@@ -148,6 +150,23 @@ Leaflet.control.sidebar({
 // Will initialize the toolbar here
 // The leaflet-toolbar and leaflet-draw-toolbar libraries are not maintained so that it can be used with webpack or other new bundlers
 // Rather than spending time to add such libraries, we should work on other stuff
+
+// CountrySelect
+var select = Leaflet.countrySelect({title: 'Pick the Country'});
+select.addTo(map);
+select.on('change', function(e){
+  if (e.feature === undefined){ //Do nothing on title
+    return;
+  }
+  var country = Leaflet.geoJson(e.feature);
+  if (this.previousCountry != null){
+    map.removeLayer(this.previousCountry);
+  }
+  this.previousCountry = country;
+
+  map.addLayer(country);
+  map.fitBounds(country.getBounds());
+});
 
 setTimeout(() => {
   map.invalidateSize();
